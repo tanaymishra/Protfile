@@ -1,0 +1,195 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    @media only screen and (max-width: 700px) {
+        .current-section {
+            display: none;
+        }
+        .boxes {
+            display: none;
+        }
+        nav ul,
+        nav button {
+            display: none;
+        }
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            margin-left: auto;
+            margin-bottom: 1rem;
+            .ham-lines {
+                height: 1em;
+                width: 4.5em;
+                margin: 0.5em 0em;
+                border-radius: 3px;
+                background-color: #525252;
+            }
+        }
+        .background {
+            // display: none;
+            transform: translate(-47vw, 41vh) rotate(180deg)
+        }
+        #first {
+            flex-direction: column;
+            align-items: baseline;
+        }
+        .info {
+            min-height: 44vh;
+            overflow: visible;
+            .text {
+                margin-top: 3rem;
+                h2 {
+                    font-size: 3.6rem;
+                }
+            }
+        }
+        .btn-s1,
+        .btn-s1 span {
+            width: 13.3rem;
+            height: 6rem;
+        }
+        .buttons {
+            button {
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        #pc-view-img {
+            display: none;
+        }
+        .about-mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+            max-height: 36vh;
+            .sepline-mobile {
+                height: 100%;
+                width: 10px;
+                background-color: #e2e2e2;
+                border-radius: 7px;
+                margin: 0rem 1rem;
+            }
+            img {
+                width: 19rem;
+                object-fit: cover;
+            }
+            .text-about-mobile {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h2 {
+                    font-size: 1.8rem;
+                    color: #ffffff;
+                    font-family: "Poppins", sans-serif;
+                }
+                p {
+                    font-size: 1.1rem;
+                    color: #ffffff;
+                    font-family: "Montserrat", sans-serif;
+                    font-weight: 600;
+                    margin-left: 1rem;
+                }
+            }
+        }
+        #second {
+            width: 120%;
+            transform: translate(-4vh, -10vh);
+            .slider {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .box-left,
+            .box-right {
+                display: none;
+            }
+            .slider-left,
+            .slider-right {
+                width: 6rem;
+                height: 4rem;
+            }
+        }
+        .third-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact {
+            margin: 0 0 0 0;
+            width: 100%;
+            button {
+                width: 11.3rem;
+                height: 5rem;
+            }
+            h2 {
+                font-size: 2.4rem;
+                // margin-left: 1rem;
+            }
+            .inputs {
+                #email,
+                #name {
+                    margin: 6rem 0rem;
+                }
+                #name {
+                    margin-top: 0;
+                }
+            }
+        }
+        .contact .inputs #email {
+            margin: 4rem 0rem;
+        }
+        .main-content {
+            overflow: visible;
+        }
+        #third {
+            overflow: visible;
+            .third-container {
+                overflow: visible;
+            }
+        }
+        .join {
+            overflow: visible;
+            margin-top: 2rem;
+            margin-right: 0;
+            width: 80%;
+            h2 {
+                font-size: 2.4rem;
+            }
+            #contact-images {
+                display: flex;
+                // width: 20rem;
+                margin-top: 4rem;
+                img {
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (max-width: 1000px) {
+        nav ul li {
+            font-size: 1.4rem;
+        }
+        nav ul {
+            width: 40rem;
+        }
+        .boxes {
+            display: none;
+        }
+        .btn-s1,
+        .btn-s1 span {
+            width: 13.3rem;
+            height: 6rem;
+            font-size: 1.4rem;
+        }
+        .info {
+            .text {
+                margin-top: 5rem;
+                h2 {
+                    font-size: 4rem;
+                }
+            }
+        }
+    }

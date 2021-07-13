@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <script>
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 500);
+    </script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="pinned-section">
+            <!-- Overlay -->
+            <div class="overlay-nav">
+                <div class="hamburger-cross">
+                    <div class="lines-cross"></div>
+                    <div class="lines-cross"></div>
+                </div>
+                <div class="background-nav-mobile"></div>
+                <div class="container-nav">
+                    <div class="contact-mobile" onclick="mail()">
+                        <h2>Contact now</h2>
+                        <img src="files/arrow-mobile.svg" alt="Arrow">
+                        <button>Contact</button>
+                    </div>
+                    <ul>
+                        <li onclick="gitrid()">Github</li>
+                        <li onclick="insrid()">Instagram</li>
+                        <li onclick="alert('We will launch it Soon!')">Donate</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Overlay Nav -->
+            <!-- Nav starts -->
+            <nav>
+                <div class="logo"><img src="files/logo.svg" alt="Protfile"></div>
+                <ul>
+                    <li class="list-item" onclick="gitrid() ">Github
+                        <div class="hover"></div>
+                    </li>
+                    <li class="list-item" onclick="insrid()">Instagram
+                        <div class="hover"></div>
+                    </li>
+                    <li class="list-item">Donate
+                        <div class="hover"></div>
+                    </li>
+                </ul>
+                <div class="boxes">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+                <button onclick="mail()">Contact</button>
+                <div class="hamburger">
+                    <div class="ham-lines"></div>
+                    <div class="ham-lines"></div>
+                    <div class="ham-lines"></div>
+                </div>
+            </nav>
+            <!-- nav ends -->
+            <div class="background"></div>
+            <div class="current-section">
+                <div class="circle circle1 active"></div>
+                <div class="circle circle2"></div>
+                <div class="circle circle3"></div>
+            </div>
+            <div class="main-content">
+                <section id="first" class="">
+                    <div class="info">
+                        <div class="text">
+                            <p>Dedicated to design</p>
+                            <h2>We will Create <br> Something <br> Cool</h2>
+                            <img src="files/dash.svg" alt="">
+                        </div>
+                        <div class="buttons">
+                            <button onclick="gitrid()" class="btn-s1 github"><img src="files/githubtn.svg" alt=""> <span>  Github </span></button>
+                            <button class="btn-s1 work"><img src="files/work.svg" alt=""><span>Works</span></button>
+                        </div>
+                    </div>
+                    <img src="files/avatar.png" id="pc-view-img" alt="Avatar">
+                    <div class="about-mobile">
+                        <img src="files/avatar.png" alt="">
+                        <div class="sepline-mobile"></div>
+                        <div class="text-about-mobile">
+                            <h2>I'm Tanay</h2>
+                            <p>Hello, I am tanay mishra I am 17 Years Old, I am Web designer and developer and sometimes i like to do Backend server programming , Server Development , Python Programming and Other amazing stuff.. </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="second" class="">
+                    <div class="slider-left">
+                        <div id="triangle-left"></div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-box box-left">
+                            <div class="box-circle"></div>
+                            <div class="content">
+                                <img src="files/designer.svg" alt="Image">
+                                <h2>Designing</h2>
+                                <p>We/I can design the Good <br> looking User Intercface <br> for your Buiesness <br> without Dealy..</p>
+                            </div>
+                        </div>
+                        <div class="slider-box slider-box-active">
+                            <div class="box-circle box-circle-active"></div>
+                            <div class="content">
+                                <img src="files/designer2.svg" alt="Image">
+                                <h2>Designing</h2>
+                                <p>We/I can design the Good <br> looking User Intercface <br> for your Buiesness <br> without Dealy..</p>
+                            </div>
+                        </div>
+                        <div class="slider-box box-right">
+                            <div class="box-circle"></div>
+                            <div class="content">
+                                <img src="files/computers.svg" alt="Image">
+                                <h2>Designing</h2>
+                                <p>We/I can design the Good <br> looking User Intercface <br> for your Buiesness <br> without Dealy..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-right">
+                        <div id="triangle-right"></div>
+                    </div>
+                </section>
+                <section id="third" class="">
+                    <div class="third-container">
+                        <div class="contact">
+                            <h2>Contact Us :</h2>
+                            <div class="inputs">
+                                <div id="name">
+                                    <input type="text" placeholder="Name">
+                                    <div class="inputline"></div>
+                                </div>
+                                <div id="email">
+                                    <input type="text" placeholder="E-mail">
+                                    <div class="inputline"></div>
+                                </div>
+                                <div class="desicription">
+                                    <textarea placeholder="Description" name="" id="contact-textarea" cols="40" rows="0"></textarea>
+                                    <div class="inputline"></div>
+                                </div>
+                                <Button onclick="emaildet()"><img id="image1" src="files/send.svg"  alt=""> <img src="files/send2.svg" class="none red" alt=""> <span> Send</span></Button>
+                            </div>
+                        </div>
+                        <div class="join">
+                            <h2>Join me</h2>
+                            <div id="contact-images">
+                                <img onclick="insrid()" src="files/instagram.svg" alt="Instagram">
+                                <img onclick="gitrid()" src="files/github.svg" alt="Github">
+                                <img onclick="linkrid()" src="files/linkedin.svg" alt="LinkedIn">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="hit1"></div>
+        <div class="hit2"></div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/CSSRulePlugin.min.js" integrity="sha512-EIzKYNrmzSj8Q5czLrNi/F6bplhopAp2Li9nk/8r7MW+Ov9KPEo0xrjWMYXU8lFYy5dzh/w8Ql5ShZHucrjXdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/app.js"></script>
+<script src="js/redirect.js"></script>
+
+</html>

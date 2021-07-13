@@ -1,0 +1,72 @@
+nav {
+    display: flex;
+    margin: 5vh 10vw;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 18px;
+    overflow: visible;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 4vw;
+    position: relative;
+    z-index: 2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+nav ul li {
+    margin: 0rem 2.5vw;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+nav button {
+    width: 104px;
+    height: 42px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #F08624;
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+nav {
+    z-index: 2;
+    position: relative;
+}
+
+.boxes {
+    display: flex;
+    overflow: visible;
+    transform: translate(-5vw, 1vh);
+    position: relative;
+}
+
+.box {
+    width: 10vh;
+    height: 10vh;
+    background: white;
+}
+
+.box:nth-child(2) {
+    transform: translate(0, 10vh);
+}
+
+.hamburger {
+    display: none;
+}

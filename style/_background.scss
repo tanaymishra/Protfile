@@ -1,0 +1,38 @@
+.background {
+    position: absolute;
+    width: 120rem;
+    height: 80rem;
+    background: rgb(11, 79, 156);
+    border-radius: 50%;
+    transform: translate(44vw, -32vh);
+    background: linear-gradient(242.86deg, rgba(240, 126, 36, 0.83) 50.31%, rgba(248, 177, 25, 0.79) 94.13%);
+}
+
+.current-section {
+    position: absolute;
+    transform: translate(5vw, 23vh);
+    .circle {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background: #C4C4C4;
+        margin: 1vh 0vh;
+    }
+    .active {
+        background: #F07E24;
+    }
+}
+
+.pinned-section,
+.hit1,
+.hit2 {
+    height: 100vh;
+}
+
+.pinned-section {
+    overflow: hidden;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+*::selection {
+    background: #F07E24;
+}
+
+.none {
+    display: none !important;
+}
+
+body {
+    overflow-x: visible
+}
+
+button {
+    cursor: pointer !important;
+    transition: 0.5s all ease-out;
+}
+
+button:hover {
+    transform: scale(0.95);
+}
+
+.container {
+    height: 300vh;
+}
+
+.about-mobile {
+    display: none;
+}
+
+@import "nav";
+@import "background";
+@import "pinning";
+@import "info";
+@import "lihover";
+@import "section2";
+@import "section3";
+@import "responsive";
+@import "hamburger-nav";

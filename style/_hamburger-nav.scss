@@ -1,0 +1,97 @@
+.overlay-nav-active {
+    display: block;
+}
+
+.overlay-nav {
+    display: none;
+    position: fixed;
+    pointer-events: auto;
+    height: 100vh;
+    background: #ffffff;
+    width: 100vw;
+    z-index: 5;
+    .container-nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .contact-mobile {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            color: white;
+            * {
+                margin: 1rem 0;
+            }
+            h2,
+            img {
+                margin-right: 1rem;
+            }
+            h2 {
+                font-size: 2.4rem;
+            }
+            button {
+                width: 104px;
+                height: 42px;
+                border-radius: 6px;
+                box-shadow: 0px 4px 4px 0px #00000040;
+                outline: none;
+                border: none;
+                font-size: 18px;
+                font-weight: bold;
+                color: #F08624;
+                margin-left: auto;
+                margin-right: 5rem;
+            }
+        }
+        ul {
+            height: 50vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            color: black;
+            li {
+                font-size: 2.4rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.background-nav-mobile {
+    width: 70rem;
+    position: absolute;
+    height: 60rem;
+    border-radius: 50%;
+    right: 50%;
+    top: 17vh;
+    background: linear-gradient(180deg, rgba(240, 126, 36, 0.8) 0%, rgba(248, 177, 25, 0.79) 100%);
+}
+
+.hamburger-cross {
+    min-height: 5vh;
+    margin: 2vh;
+    overflow: visible;
+    transform: rotate( 275deg);
+    transform-origin: 10% 10%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 48vh;
+    .lines-cross {
+        height: 9px;
+        width: 4.5rem;
+        background: #525252;
+        border-radius: 7px;
+    }
+    .lines-cross:nth-child(1) {
+        transform: rotate(-55deg) translate(-0.8rem, 0.5rem);
+    }
+    .lines-cross:nth-child(2) {
+        transform: rotate( 40deg);
+    }
+}
