@@ -974,7 +974,7 @@ html::-webkit-scrollbar {
   height: 60rem;
   border-radius: 50%;
   right: 50%;
-  top: 17vh;
+  top: 20vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(240, 126, 36, 0.8)), to(rgba(248, 177, 25, 0.79)));
   background: linear-gradient(180deg, rgba(240, 126, 36, 0.8) 0%, rgba(248, 177, 25, 0.79) 100%);
 }
