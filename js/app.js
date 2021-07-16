@@ -56,7 +56,7 @@ buttonRight.addEventListener("click", () => {
         items[0].left.classList.add("slider-box-active")
     })
     //For Grid slider
-if (window.innerWidth > 700) {
+const pcanimate = () => {
     let tls1 = new gsap.timeline({ paused: true })
         .to(".background", 1, {
             width: "38rem",
@@ -137,7 +137,8 @@ if (window.innerWidth > 700) {
         // .addIndicators()
         .setTween(tls2)
         .addTo(controller)
-} else {
+}
+const mobile = () => {
     let tls1 = new gsap.timeline({ paused: true })
         .to(".background", 1, {
             transform: "translate(-32rem,22rem) rotate(180deg) skew(360deg)"
@@ -215,6 +216,13 @@ if (window.innerWidth > 700) {
         // .addIndicators()
         .setTween(tls2)
         .addTo(controller)
+}
+if (700 > window.innerWidth) {
+    mobile()
+    console.log("mobile")
+} else {
+    pcanimate()
+    console.log("Computer")
 }
 
 
