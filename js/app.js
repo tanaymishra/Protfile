@@ -55,8 +55,8 @@ buttonRight.addEventListener("click", () => {
         items[0].left.classList.remove("box-left")
         items[0].left.classList.add("slider-box-active")
     })
-    //For Failed slider
-if (window.innerWidth < 700) {
+    //For Grid slider
+if (window.innerWidth > 700) {
     let tls1 = new gsap.timeline({ paused: true })
         .to(".background", 1, {
             width: "38rem",
